@@ -122,5 +122,5 @@ The full example with the grammar is included as a test case in `test/scala`.
 
 Sometimes, the constraints have much better compositionality properties than the solutions:
 
-  * The fixed point (the result of converging iteration) does not have any good compositional properties at all, e.g. you can't define it by a top-down recursion as if it's some kind of "semantic" of some formulas.
+  * The fixed point (the result of converging iteration) does not have any good compositional properties at all, e.g. you can't define it by a top-down recursion as if it weresome kind of "semantics" for some formulas.
   * The constraints (system of inequalities) are nicely composable (essentially an `Applicative` functor).
