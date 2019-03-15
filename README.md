@@ -4,7 +4,7 @@
 
 Dataflow algorithm with a simple functional interface.
 
-Allows the user to construct (cyclic) directed graphs of mutually interdependent values can be constructed in declarative fashion, and then query the results of a converging fixpoint iteration as if they are "already there".
+Allows the user to construct (cyclic) directed graphs of mutually interdependent values in declarative fashion, and then query the results of a converging fixpoint iteration as if they are "already there".
 
 ### Where is this useful?
 
@@ -118,7 +118,7 @@ assert(!isNullable(c))
 
 The full example with the grammar is included as a test case in `test/scala`.
 
-### Fun fact
+### An observation
 
 Sometimes, the constraints have much better compositionality properties than the solutions:
 
