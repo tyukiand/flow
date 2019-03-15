@@ -1,4 +1,4 @@
-##flow
+## flow
 
 ### What is this?
 
@@ -30,7 +30,7 @@ println(a.get) // prints `42.0`
 
 It uses numeric values instead of the usual posets, but the principle is the same:
 
-  1. We describe a system of equations with mutually recursive values (in this case, `a` depends on itself)
+  1. We describe a system of equations (or rather, inequalities) with mutually recursive values (in this case, `a` depends on itself)
   2. We ask what the solution is, and the algorithm gives us the solution.
 
 ### A more realistic example
@@ -39,7 +39,7 @@ Here is an example that shows how we can compute nullability of non-terminal sym
 
 ```
 /** Provides few simple combinators for describing grammars in a style
-  * (similar to parser combinators. Implements nullablity check using `flow`.
+  * similar to parser combinators. Implements nullablity check using `flow`.
   */
 trait Grammar {
   sealed trait Lang {
@@ -115,3 +115,12 @@ assert(isNullable(a))
 assert(isNullable(b))
 assert(!isNullable(c))
 ```
+
+The full example with the grammar is included as a test case in `test/scala`.
+
+### Fun fact
+
+Sometimes, the constraints have much better compositionality properties than the solutions:
+
+  * The fixed point (the result of converging iteration) does not have any good compositional properties at all, e.g. you can't define it by a top-down recursion as if it's some kind of "semantic" of some formulas.
+  * The constraints (system of inequalities) are nicely composable (essentially an `Applicative` functor).
