@@ -14,7 +14,7 @@ Mostly for dataflow algorithms on bounded semilattices as they are often found i
 
 The following minimal example implements Heron's method for computing square root of `1764`:
 
-```
+```scala
 // initialize empty flow context, import combinators
 val ctx = FlowContext.empty
 import ctx._
@@ -37,7 +37,7 @@ It uses numeric values instead of the usual posets, but the principle is the sam
 
 Here is an example that shows how we can compute nullability of non-terminal symbols for a context free grammar with left recursion (which would blow up if we attempted to use naive recursion):
 
-```
+```scala
 /** Provides few simple combinators for describing grammars in a style
   * similar to parser combinators. Implements nullablity check using `flow`.
   */
