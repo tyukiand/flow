@@ -1,7 +1,4 @@
- ![version: 0.1](https://img.shields.io/static/v1.svg?label=version&message=0.1&color=lightgrey) ![local-build: passing](https://img.shields.io/static/v1.svg?label=local-build&message=passing&color=green) ![local-tests: passing](https://img.shields.io/static/v1.svg?label=local-tests&message=passing&color=green) ![statement-coverage: 100.0](https://img.shields.io/static/v1.svg?label=statement-coverage&message=100.0&color=green)  ![branch-coverage: 100.0](https://img.shields.io/static/v1.svg?label=branch-coverage&message=100.0&color=green)
-
-  *Tested locally on x86_64 GNU/Linux
- with `scalaVersion = 2.12.6`, `sbtVersion = 1.1.4`. Readme generated on 2019-03-17.* 
+<BADGES>
 
 ## flow
 
@@ -9,7 +6,7 @@
 
 Dataflow algorithm with a simple functional interface.
 
-Allows the user to construct (cyclic) directed graphs of mutually interdependent values in declarative fashion, and then query the results of a converging fixpoint iteration as if they are "already there".
+Allows the user to construct (cyclic) directed graphs of mutually interdependent values in declarative fashion, and then simply query the results of a converging fixpoint iteration.
 
 ### Where is this useful?
 
